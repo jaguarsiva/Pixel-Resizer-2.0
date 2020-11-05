@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Used in image sprites.">
+    <title>Pixel Resizer 2.0</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Pixel Resizer 2.0</h1>
+        <p> &copy; Developed by <a href="https://sivachandran.netlify.app/" title="Click here to visit Siva's Portfolio">Siva Chandran.</a> </p>
+    </nav>
+
+    <div class="outer-box">
+        <form class="mul-factor-form">
+            <textarea id="input-text" placeholder="Copy & Paste the text here." autocomplete="off"></textarea>
+            <input type="number" id="input-factor" placeholder="Multiplication Factor" autocomplete="off">
+            <button type="button" id="factor-submit-btn">Get Result</button>
+            <textarea id="output-text" placeholder="Result goes here." autocomplete="off"></textarea>
+            <button type="button" class="reset-btn d-none">
+                <img src="./images/x.png" alt="reset">
+            </button>
+        </form>
+
+        <form class="dimensions-form">
+            <div>
+                <h1>Calculate based on Height</h1>
+                <input type="number" id="input-height" placeholder="Required Height" autocomplete="off">
+                <button type="button" id="height-submit-btn">Get Result</button>
+            </div>
+
+            <div>
+                <h1>Calculate based on width</h1>
+                <input type="number" id="input-width" placeholder="Required Width" autocomplete="off">
+                <button type="button" id="width-submit-btn">Get Result</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="alert-box d-none">
+        <p>Alert Message Goes here!...</p>
+        <img src="./images/x.png" alt="close-alert">
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
